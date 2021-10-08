@@ -1,4 +1,4 @@
-# NFT Demo
+# Mint NFTs Demo
 
 ### Usage:
 1. run npm install.  
