@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DeployABCD</title>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>Wallet Address - <span id="wallet-address"></span></p>
+            <button id="mint">Mint as much NFTs you wish</button>
+        </div>
+        <script type="text/javascript">
+        
+        var account = null;
+        var contract = null;
+
+        const ABI = [];        
+        const ADDRESS = "";
+        (async () => {
+            if (window.ethereum) {
+                await window.ethereum.send('eth_requestAccounts');
+                window.web3 = new Web3(window.ethereum);
+
+                var accounts = await web3.eth.getAccounts();
+                account = accounts[0];
+                console.log("account", account);
+                document.getElementById('wallet-address').textContent = account;
+
+                contract = new web3.eth.Contract(ABI, ADDRESS);
+
+                document.getElementById('mint').onclick = () => {
+                    contract.methods.claimItem('https://ipfs.io/ipfs/QmREBUVuoeX39eB9KiQjp25RFr2dhYF6zawpYXq1UPJXEz').send({from: account})
+                }
+
+            }
+        })();
+         
+        </script>
+
+    </body>
+</html>

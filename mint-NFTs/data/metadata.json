@@ -1,0 +1,11 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Color",
+      "value": "Pink"
+    }
+  ],
+  "description": "Hugo predicts future of Anand!",
+  "image": "https://ipfs.io/ipfs/ImageHashKey",
+  "name": "Hugo The Anand Stuff"
+}
