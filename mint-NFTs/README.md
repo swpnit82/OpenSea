@@ -41,3 +41,13 @@ Serving HTTP on 0.0.0.0 port 8000 ...
 127.0.0.1 - - [07/Oct/2021 09:18:00] "GET /scripts/ HTTP/1.1" 200 -
 
 Go to : localhost/scripts and mint as much NFTs you wish
+
+
+Add these details to .env file
+
+PINATA_API_KEY=""
+PINATA_API_SECRET=""
+PINATA_ENDPOINT="https://api.pinata.cloud/pinning/pinFileToIPFS"
+MNEMONIC=""
+ETH_CLIENT_URL=""
+CONTRACT_ADDRESS=""
