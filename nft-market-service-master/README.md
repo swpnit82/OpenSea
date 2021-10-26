@@ -30,5 +30,8 @@ IPFS_INFURA_SECRET=997d6a2c25c5dc93e418de4bb852cd42
 npm start
 ```
 
-Please change 
+## To show/change your tokens
+
+Please change content of 
+
 db/index.ts
