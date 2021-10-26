@@ -1,4 +1,4 @@
-1 . Create .env file with below parameters
+1 . Create .env file with below parameters with your details
 
 IPFS_HOST=ipfs.infura.io
 RPC_HOST=localhost
@@ -12,7 +12,7 @@ SERVICE_URL=http://localhost:4000/dev
 ADDRESS=
 
 
-2. Check and change truffle-config.js
+2. Check and change truffle-config.js with your details
 
 
 3. First run
