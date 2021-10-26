@@ -58,8 +58,8 @@ module.exports = {
     rinkeby: {
       provider: function () {
         return new HDWalletProvider({
-          mnemonic: "tuition track more enhance immune bridge elder cute victory beach fork diesel",
-          providerOrUrl: `https://rinkeby.infura.io/v3/8fca66fb1260459e937e2af14f4cb111`,
+          mnemonic: process.env.KEY_MNEMONIC,
+          providerOrUrl: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
           addressIndex: 0,
         })
       },
